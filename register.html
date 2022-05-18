@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta charset="Utf-8">
+        <title>Registration Page</title>
+        <style>
+            body{
+                background-color: yellow;
+                width: 66%;
+            }
+          
+            .tooltip{
+                position: relative;
+                display: inline-block;
+                color: rgb(33, 120, 235);
+                font-weight: 350;
+                font-size: 16px;
+                left: 23%;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: rgb(35, 240, 35);
+                color: rgb(243, 9, 9);
+                text-align: center;
+                font-weight: 344;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+                top: -5px;
+                left: 105px;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+            form{
+                border: 1px solid ;
+                width: 100%;
+                border-radius: 1%;
+                margin-left: 23%;
+                padding-top: 25px;
+                margin-top: 30px;
+            }
+            label{
+                color: black;
+                
+                margin-bottom: 10%;
+            }
+            input[type="text" ]{
+                width: 60%;
+                
+                
+
+             }
+            input[type="email" i],input[type="password" i]{
+                width: 60%;
+                
+            }    
+            input[type="countrycode"]{
+                width: 33px;
+            }   
+            input [type="phoneNumber"]{
+                width: 49px;
+            }   
+            .hero-btn{
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+     border: 1px solid red;
+     margin-top: 37px;
+     padding: 6px 10px;
+     font-size: 17px;
+     font-weight: 300;
+     background: red;
+     position: relative;
+     cursor: pointer;
+     border-radius: 8%;
+ }
+ .hero-btn:hover{
+     border: 1px solid chocolate;
+     background: green;
+     transition: 1s;
+   }  
+
+.container{
+        padding: 17px;
+        background-color:transparent;
+          }
+          div.container{
+              color: black;
+              font-weight: 700;
+              text-align: left;
+          }
+          div.container a{
+              color: black;
+              font-weight: 600;
+          }
+          #watermark{
+              position:absolute ;
+             transform: rotate(-60deg);
+              opacity:.4;
+              z-index: 20;
+              font-size:34px;
+              font-style: italic;            
+              top: 50%;
+              left: 23%;
+              color: rgb(5, 129, 5);
+          }
+        </style>
+    </head>
+    <body>
+      
+         
+        <div class="tooltip">Sign Up
+            <span class="tooltiptext">Insert correct details</span>
+        </div>
+       
+        <form>
+         
+             <div class="container">
+                
+                <a href="index.html">HOME</a><br>
+<label for="Firstname">First Name:
+</label><br>
+<input type="text"name="firstname"id="firstname" required maxlength="15"><br>
+
+<br>
+<label>Lastname:</label><br>
+<input type="text"name="lastname"id="lastname"required maxlength="15"><br><br>
+
+<label>Occupation:</label><br>
+<select required>
+    
+    <option value="EMPLOYED">EMPLOYED</option>
+    <option value="FARMER">FARMER</option>
+    <option value="BUSINESS PERSON">BUSINESS PERSON</option>
+    <option value="STUDENT">STUDENT</option>
+    <option value="NONE">NONE</option>
+</select><br><br>
+
+<label>Username:</label><br>
+<input type="text" id="Username" required maxlength="8"><br><br>
+
+<label>Phone Number:</label><br>
+<input type="countrycode"name="country code"value="+254" required maxlength="4">
+<input type="phoneNumber"name="phone"required maxlength="10"/><br><br>
+
+<label>Email:</label><br>
+<input type="email" id="email" name="email"required/><br><br>
+
+<label>Password:</label><br>
+<input type="password" id ="pass" name="pass"required><br><br>
+<div id="watermark">OLCWeb Solutions</div>
+
+<input type="checkbox"checked="checked"required>I agree to the Terms and Conditions.<br>
+<button>Submit</button><br><br>
+<a href="loginpage.html">Have an account?Login</a>
+</div>
+&copy 2022 OLCWeb Solutions.<br>ALL RIGHTS RESERVED.
+
+</form>
+
+    </body>
+</html>
